@@ -1,0 +1,303 @@
+[gd_scene format=3 uid="uid://nqmds7bi4ovb"]
+
+[ext_resource type="Script" uid="uid://8mxrbu54tmfu" path="res://scripts/talents.gd" id="1_sn1if"]
+[ext_resource type="Script" uid="uid://d31dujsyoo22x" path="res://scripts/TreeViewport.gd" id="2_alwg2"]
+[ext_resource type="Script" uid="uid://bn6k7fgefxda8" path="res://scripts/ImageViewport.gd" id="2_kj4sa"]
+[ext_resource type="Theme" uid="uid://bc4hbn5n6ko0j" path="res://Themes/TalentTheme.tres" id="3_jbks4"]
+
+[node name="Talents" type="Control" unique_id=1028462819]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_sn1if")
+
+[node name="TalentScreen" type="Control" parent="." unique_id=1393907466]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Retour" type="Button" parent="TalentScreen" unique_id=501357303]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 582.0
+offset_right = 1140.0
+offset_bottom = 632.0
+text = "Return"
+
+[node name="TreeViewport" type="Control" parent="TalentScreen" unique_id=1639816074]
+clip_contents = true
+anchors_preset = 0
+offset_right = 1129.0
+offset_bottom = 573.0
+script = ExtResource("2_alwg2")
+
+[node name="TalentsContainer" type="Control" parent="TalentScreen/TreeViewport" unique_id=864294867]
+anchors_preset = 0
+offset_left = 8.0
+offset_top = 41.0
+offset_right = 1148.0
+offset_bottom = 566.0
+theme = ExtResource("3_jbks4")
+
+[node name="StatsTrees" type="Control" parent="TalentScreen/TreeViewport/TalentsContainer" unique_id=634911190]
+anchors_preset = 0
+offset_left = 35.0
+offset_top = 474.0
+offset_right = 701.0
+offset_bottom = 514.0
+
+[node name="Burly" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/StatsTrees" unique_id=1758587894]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 35.0
+text = "Burly"
+
+[node name="Energetic" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/StatsTrees" unique_id=777175261]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 110.0
+offset_right = 210.0
+offset_bottom = 35.0
+text = "Energetic"
+
+[node name="Cerebral" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/StatsTrees" unique_id=553078213]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 1
+anchors_preset = -1
+anchor_bottom = 0.215
+offset_left = 220.0
+offset_right = 320.0
+offset_bottom = 26.4
+text = "Cerebral"
+
+[node name="Sly" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/StatsTrees" unique_id=1107996093]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 330.0
+offset_right = 430.0
+offset_bottom = 35.0
+text = "Sly"
+
+[node name="Determined" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/StatsTrees" unique_id=1153332501]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 440.0
+offset_right = 540.0
+offset_bottom = 35.0
+text = "Determined"
+
+[node name="Confident" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/StatsTrees" unique_id=142261222]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 550.0
+offset_right = 650.0
+offset_bottom = 35.0
+text = "Confident"
+
+[node name="StarterTrees" type="Control" parent="TalentScreen/TreeViewport/TalentsContainer" unique_id=1765302907]
+anchors_preset = 0
+offset_left = 44.948547
+offset_top = 680.0255
+offset_right = 489.94855
+offset_bottom = 720.0255
+
+[node name="Enforcer" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/StarterTrees" unique_id=656756081]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 35.0
+text = "Enforcer"
+
+[node name="Assassin" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/StarterTrees" unique_id=1144771900]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 110.0
+offset_right = 210.0
+offset_bottom = 35.0
+text = "Assassin"
+
+[node name="Inudo" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/StarterTrees" unique_id=461993965]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 220.0
+offset_right = 320.0
+offset_bottom = 35.0
+text = "Inudo"
+
+[node name="Netrunner" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/StarterTrees" unique_id=371546909]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 330.0
+offset_right = 430.0
+offset_bottom = 35.0
+text = "Netrunner"
+
+[node name="FoodTrees" type="Control" parent="TalentScreen/TreeViewport/TalentsContainer" unique_id=1681325161]
+anchors_preset = 0
+offset_left = 764.97406
+offset_top = 474.3075
+offset_right = 804.97406
+offset_bottom = 514.3075
+
+[node name="Tobacco" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/FoodTrees" unique_id=388055458]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 35.0
+text = "Tobacco"
+
+[node name="Sapberry" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/FoodTrees" unique_id=67275427]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 110.0
+offset_right = 210.0
+offset_bottom = 35.0
+text = "Sapberry"
+
+[node name="Samsara" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/FoodTrees" unique_id=30481581]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 220.0
+offset_right = 320.0
+offset_bottom = 35.0
+text = "Samsara"
+
+[node name="Saï" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/FoodTrees" unique_id=1315606335]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 330.0
+offset_right = 430.0
+offset_bottom = 35.0
+text = "Saï"
+
+[node name="Corretto" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/FoodTrees" unique_id=2031447768]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 440.0
+offset_right = 540.0
+offset_bottom = 35.0
+text = "Corretto"
+
+[node name="WIP2" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/FoodTrees" unique_id=2111621377]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 550.0
+offset_right = 650.0
+offset_bottom = 35.0
+text = "???"
+
+[node name="Chansasha" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/FoodTrees" unique_id=612055078]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 660.0
+offset_right = 760.0
+offset_bottom = 35.0
+text = "Chansasha"
+
+[node name="CulturalTrees" type="Control" parent="TalentScreen/TreeViewport/TalentsContainer" unique_id=1607093274]
+anchors_preset = 0
+offset_left = 1848.5336
+offset_top = 469.53833
+offset_right = 1888.5336
+offset_bottom = 509.53833
+
+[node name="Ailuri" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/CulturalTrees" unique_id=1725506961]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 35.0
+text = "Ailuri"
+
+[node name="Patages" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/CulturalTrees" unique_id=1608799820]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 110.0
+offset_right = 210.0
+offset_bottom = 35.0
+text = "Patagès"
+
+[node name="Scuri" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/CulturalTrees" unique_id=657095841]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 220.0
+offset_right = 320.0
+offset_bottom = 35.0
+text = "Scuri"
+
+[node name="Alronis" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/CulturalTrees" unique_id=1967077318]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 330.0
+offset_right = 430.0
+offset_bottom = 35.0
+text = "Alronis"
+
+[node name="WIP" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/CulturalTrees" unique_id=723551837]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 440.0
+offset_right = 540.0
+offset_bottom = 35.0
+text = "???"
+
+[node name="Nir" type="Button" parent="TalentScreen/TreeViewport/TalentsContainer/CulturalTrees" unique_id=383022633]
+custom_minimum_size = Vector2(100, 35)
+custom_maximum_size = Vector2(100, 35)
+layout_mode = 0
+offset_left = 550.0
+offset_right = 650.0
+offset_bottom = 35.0
+text = "Nir"
+
+[node name="ImageViewport" type="Control" parent="." unique_id=604743057]
+visible = false
+anchors_preset = 0
+offset_right = 1071.0
+offset_bottom = 580.0
+script = ExtResource("2_kj4sa")
+
+[node name="ImageDisplay" type="TextureRect" parent="ImageViewport" unique_id=418835806]
+show_behind_parent = true
+layout_mode = 0
+offset_left = 50.0
+offset_top = 15.0
+offset_right = 1031.0
+offset_bottom = 547.0
+expand_mode = 1
+stretch_mode = 2
+
+[node name="Fermer" type="Button" parent="ImageViewport" unique_id=1679131150]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 585.0
+offset_right = 1142.0
+offset_bottom = 630.0
+text = "Close
+"
+
+[connection signal="pressed" from="TalentScreen/Retour" to="." method="_on_retour_pressed"]
+[connection signal="pressed" from="ImageViewport/Fermer" to="." method="_on_fermer_pressed"]

@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://bc4hbn5n6ko0j"]
+
+[sub_resource type="SystemFont" id="SystemFont_dcyqx"]
+
+[resource]
+default_font = SubResource("SystemFont_dcyqx")
+Done/colors/Green = Color(0, 0.7019608, 0, 1)

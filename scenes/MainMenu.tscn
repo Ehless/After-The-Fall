@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://cmee2dw2v7qo7"]
+
+[ext_resource type="Script" uid="uid://re347khk8gjo" path="res://scripts/main_menu.gd" id="1_yqorp"]
+
+[node name="MainMenu" type="Control" unique_id=235239783]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_yqorp")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1051268885]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 28.743002
+anchor_bottom = 16.121
+offset_left = 128.0
+offset_top = 382.0
+offset_right = -103.72009
+offset_bottom = -123.84003
+
+[node name="TalentButton" type="Button" parent="VBoxContainer" unique_id=779847121]
+layout_mode = 2
+text = "Arbres de Spécialisations"
+
+[node name="LeaveButton" type="Button" parent="VBoxContainer" unique_id=221015516]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/TalentButton" to="." method="_on_talent_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/LeaveButton" to="." method="_on_leave_button_pressed"]
